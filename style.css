@@ -1,0 +1,36 @@
+body {
+  background-image: url("1618454055_25-phonoteka_org-p-zvezdnii-fon-kosmos-29.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  bottom: -2%;
+  left: 50%;
+  transform: translate(-50%, -50%) perspective(300px) rotateX(25deg);
+  color: transparent;
+  text-shadow: 0 0 10px rgba(255,255,255,0.8), 0 0 20px rgba(255,255,255,0.6), 0 0 30px rgba(255,255,255,0.4), 0 0 40px rgba(255,255,255,0.2), 0 0 50px rgba(255,255,255,0.1);
+  font-size: 3em;
+  font-family: 'Star Jedi', sans-serif;
+  background: linear-gradient(to bottom, rgba(255,255,0,1) 0%,rgba(255,255,0,1) 25%,rgba(255,255,0,0.5) 50%,rgba(255,255,0,1) 75%,rgba(255,255,0,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: move-up 30s linear infinite;
+}
+
+@keyframes move-up {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
